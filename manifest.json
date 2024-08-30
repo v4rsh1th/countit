@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Countdown Extension",
+    "version": "1.0",
+    "description": "Chrome extension that counts the days and minutes left from a target date to today",
+    "permissions": [
+        "activeTab"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "popup.js"
+            ]
+        }
+    ]
+}
